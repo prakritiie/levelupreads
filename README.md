@@ -30,23 +30,40 @@ Run tests with: `npm test`
 ## Monitoring
 
 ### Health Check
-The application provides a health check endpoint at `/api/health` that returns the current status and timestamp.
+The application provides health check endpoints:
+- `/api/health` - Basic health status
+- `/api/metrics` - System metrics (uptime, memory usage)
 
-### Logging
-API requests are logged to the console with timestamps and request details for monitoring and debugging.
+### Monitoring Stack
+Run the full monitoring stack with Prometheus and Grafana:
+
+```bash
+docker-compose up
+```
+
+Access:
+- Application: http://localhost:3000
+- Prometheus: http://localhost:9090
+- Grafana: http://localhost:3001 (admin/admin)
 
 ## Deployment
 
-### Docker
-Build the Docker image: `docker build -t levelupreads .`
+### Local Docker
+```bash
+docker build -t levelupreads .
+docker run -p 3000:3000 levelupreads
+```
 
-Run the container: `docker run -p 3000:3000 levelupreads`
+### Docker Compose (with monitoring)
+```bash
+docker-compose up
+```
 
-### CI/CD
-The project includes a GitHub Actions workflow that:
-- Runs linting
-- Executes tests
-- Builds the application
-- Builds and tests the Docker image
+### Automated Deployment
+The CI/CD pipeline automatically deploys to Render after successful tests.
 
-Push to the `master` branch to trigger the CI/CD pipeline.
+To set up Render deployment:
+1. Create a Render service connected to this GitHub repo
+2. Get the deploy hook URL from Render dashboard
+3. Add `RENDER_DEPLOY_HOOK_URL` as a GitHub secret
+4. Push to trigger automatic deployment
