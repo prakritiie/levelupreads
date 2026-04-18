@@ -14,19 +14,24 @@ async function writeBooks(data: Array<Record<string, unknown>>) {
 }
 
 export async function GET() {
+  console.log('[API] GET /api/books - Fetching all books')
   try {
     const books = await readBooks()
+    console.log(`[API] GET /api/books - Returned ${books.length} books`)
     return NextResponse.json(books)
   } catch (error) {
+    console.error('[API] GET /api/books - Error loading books:', error)
     return NextResponse.json({ error: 'Unable to load books' }, { status: 500 })
   }
 }
 
 export async function POST(request: Request) {
+  console.log('[API] POST /api/books - Adding new book')
   try {
     const body = await request.json()
     const { title, author, genre, description, coverImage } = body
     if (!title || !author || !genre || !description || !coverImage) {
+      console.warn('[API] POST /api/books - Missing required fields')
       return NextResponse.json({ error: 'Missing required book fields' }, { status: 400 })
     }
 
@@ -42,8 +47,10 @@ export async function POST(request: Request) {
     }
 
     await writeBooks([...books, newBook])
+    console.log(`[API] POST /api/books - Added book: ${newBook.title}`)
     return NextResponse.json(newBook, { status: 201 })
   } catch (error) {
+    console.error('[API] POST /api/books - Error saving book:', error)
     return NextResponse.json({ error: 'Unable to save the book' }, { status: 500 })
   }
 }
