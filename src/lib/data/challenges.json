@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Read 5 Books",
+    "description": "Finish five books in the next month to earn bonus XP.",
+    "xpReward": 100,
+    "deadline": "2026-12-31"
+  },
+  {
+    "id": 2,
+    "title": "Share Your First Review",
+    "description": "Write and post your first book review in the community.",
+    "xpReward": 40,
+    "deadline": "2026-11-10"
+  },
+  {
+    "id": 3,
+    "title": "Unlock a New Genre",
+    "description": "Explore a book from a genre you haven’t read before.",
+    "xpReward": 70,
+    "deadline": "2026-10-31"
+  }
+]

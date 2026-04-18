@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "genre": "Self Help",
+    "description": "Build better habits by creating tiny changes that lead to remarkable results.",
+    "coverImage": "https://www.bookbank.com.np/admin/images/product/20250425111731file-Atomic%20habits.jpg",
+    "xpReward": 50
+  },
+  {
+    "id": 2,
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "genre": "Fiction",
+    "description": "Explore parallel lives and the power of second chances in a magical library.",
+    "coverImage": "https://media.npr.org/assets/img/2020/09/30/815-u8gacyl_custom-56b93f54c3bde063acf1f74a343642b8c77c57c3-s1400.jpg",
+    "xpReward": 60
+  },
+  {
+    "id": 4,
+    "title": "Harry Potter and the Philosopher’s Stone",
+    "author": "JK Rowling",
+    "genre": "Magical realism and fantasy",
+    "description": "Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry’s eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!",
+    "coverImage": "https://down-my.img.susercontent.com/file/b34cac9f84630ac6993a6fceeee9c467",
+    "xpReward": 40
+  },
+  {
+    "id": 5,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "genre": "Adventure and fantasy",
+    "description": "A shepherd boy named Santiago travels from Spain to Egypt in search of a treasure buried near the Pyramids, learning about the importance of following one's dreams along the way.",
+    "coverImage": "https://i.pinimg.com/736x/93/14/92/9314924d46edcd4d3e799ba2f851b588--the-alchemist-book-jacket.jpg",
+    "xpReward": 55
+  },
+  {
+    "id": 6,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Classic literature",
+    "description": "Set in the Deep South, this novel explores themes of racial injustice and moral growth through the eyes of young Scout Finch, whose father, Atticus, defends a black man accused of raping a white woman.",
+    "coverImage": "https://cdn2.penguin.com.au/covers/original/9781784870799.jpg",
+    "xpReward": 50
+  }
+]
